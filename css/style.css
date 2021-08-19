@@ -51,6 +51,7 @@ body{
     font-weight: 400;
     color: #fff;
 }
+
 .container{
     max-width: 1220px;
     margin-left: auto;
@@ -553,4 +554,54 @@ foreignObject {
     display: flex;
     justify-content: space-between;
     margin-left: auto;
+}
+
+.footer{
+    background-image: url("../img/bg6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 100px -0px 150px;
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.footer__text{
+    width: 165px;
+    margin-right: 50px;
+}
+
+.footer__text p +  p{
+    margin-top: 50px;
+}
+
+.footer__menu{
+    list-style: none;
+    width: 120px;
+    margin-right: 95px;
+}
+
+.footer__links{
+    list-style: none;
+    width: 165px;
+}
+
+.footer__menu__item,
+.footer__links__item{
+    margin-bottom: 20px;
+}
+
+.footer__menu__link,
+.footer__links__link{
+    text-transform: uppercase;
+    transition: color .5s;
+}
+
+.footer__menu__link:hover,
+.footer__links__link:hover{
+    color: #CB0E0E;
 }
