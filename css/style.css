@@ -605,3 +605,84 @@ foreignObject {
 .footer__links__link:hover{
     color: #CB0E0E;
 }
+
+
+/*Создаю бургер меню*/
+.menu-btn{
+    display: none;
+    width: 40px;
+    padding: 0;
+    position: relative;
+    z-index: 20;
+    height: 30px;
+}
+
+.menu-btn span{
+    display: block;
+    height: 2px;
+    background-color: #fff;
+    position: relative;
+}
+.menu-btn span::before,
+.menu-btn span::after{
+    content: '';
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+}
+.menu-btn span::before{
+    top: -10px;
+}
+.menu-btn span::after{
+    top: 10px;
+}
+
+/* Создаю адаптив*/
+
+@media (max-width: 1024px) {
+    .login{
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 895px) {
+    .header__top{
+        padding-top: 30px;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .menu__list{
+        transform: translateY(-100%);
+        transition: all .5s;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #010203;
+        padding-top: 90px;
+        padding-bottom: 30px;
+        width: 100%;
+        text-align: center;
+    }
+    .menu__list.active{
+        transform: translateY(0);
+    }
+    .menu__item{
+        padding: 15px 0;
+    }
+    .menu__link{
+        display: block;
+    }
+    .phone,
+    .login{
+        position: relative;
+        z-index: 20;
+    }
+    .header__content{
+        margin: 0 auto;
+    }
+}
