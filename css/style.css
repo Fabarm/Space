@@ -685,4 +685,76 @@ foreignObject {
     .header__content{
         margin: 0 auto;
     }
+    .header__description{
+        justify-content: center;
+    }
+    .header{
+        background-position: center right;
+    }
+}
+
+@media (max-width: 620px){
+    .header__title span{
+        font-size: 60px;
+    }
+    .header__title{
+        font-size: 34px;
+        line-height: 30px;
+    }
+    .header__content{
+        text-align: center;
+    }
+    .header__text{
+        justify-content: center;
+        font-size: 18px;
+    }
+    .header__text p{
+        padding: 0 10px;
+    }
+    .header__btn{
+        font-size: 18px;
+        line-height: 24px;
+        width: 60%;
+    }
+    .header__description{
+        display: block;
+    }
+    .header__description-text{
+        width: 100%;
+        text-align: center;
+    }
+    .header__description-text + .header__description-text{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 360px){
+    .header__top{
+        flex-wrap: wrap;
+    }
+    .phone{
+        width: 100%;
+        margin-right: auto;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .menu,
+    .login{
+        order: -1;
+    }
+    .menu__list{
+        padding-top: 110px;
+        padding-bottom: 0;
+    }
+    .header__title{
+        font-size: 28px;
+    }
+    .header__title span{
+        font-size: 32px;
+    }
+    .header__btn{
+        font-size: 16px;
+        width: 100%;
+    }
 }
