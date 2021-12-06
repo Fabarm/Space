@@ -639,7 +639,32 @@ foreignObject {
     top: 10px;
 }
 
-/* Создаю адаптив*/
+/* Создаю адаптив */
+
+@media (max-width: 1160px){
+    .about{
+        text-align: center;
+    }
+    .about__item{
+        display: block;
+    }
+    .about__content{
+        width: 100%;
+    }
+    .about__table{
+        width: 100%;
+    }
+    .about__content-text{
+        display: block;
+    }
+    .about__content-text p{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .about__img{
+        margin-bottom: 50px;
+    }
+}
 
 @media (max-width: 1024px) {
     .login{
@@ -647,7 +672,7 @@ foreignObject {
     }
 }
 
-@media (max-width: 895px) {
+@media (max-width: 900px) {
     .header__top{
         padding-top: 30px;
     }
@@ -726,6 +751,14 @@ foreignObject {
     .header__description-text + .header__description-text{
         margin-left: 0;
         margin-top: 20px;
+    }
+    .title{
+        padding: 50px 0;
+        font-size: 38px;
+        line-height: 38px;
+    }
+    .about__item{
+        padding-bottom: 50px;
     }
 }
 
