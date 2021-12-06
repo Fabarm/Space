@@ -679,6 +679,15 @@ foreignObject {
     .special-offer__btn{
         margin-bottom: 20px;
     }
+    .contacts__inner{
+        display: block;
+    }
+    .contacts__box{
+        width: 100%;
+    }
+    .contacts__guarantees{
+        margin-top: 0 auto;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -871,6 +880,41 @@ foreignObject {
     .to-book{
         background-position: top left;
     }
+    .contacts__guarantees-img{
+        max-width: 100%;
+    }
+    .contacts__guarantees{
+        width: 100%;
+    }
+    .services__title{
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 570px){
+    .footer__inner{
+        display: block;
+    }
+    .footer__text{
+        width: 100%;
+        margin-right: 0;
+    }
+    .footer__text p + p{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .footer__menu,
+    .footer__links{
+        margin-right: 0;
+        width: 100%;
+    }
+    .footer__menu{
+        margin-bottom: 50px;
+    }
+    .footer{
+        text-align: center;
+        padding-bottom: 50px;
+    }
 }
 
 @media (max-width: 480px){
@@ -892,6 +936,10 @@ foreignObject {
     .services__title,
     .to-book__title{
         font-size: 23px;
+    }
+    .contacts__guarantees-text{
+        font-size: 20px;
+        line-height: 26px;
     }
 }
 
