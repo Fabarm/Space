@@ -639,6 +639,9 @@ foreignObject {
     top: 10px;
 }
 
+.how-to__box-list{
+    display: none;
+}
 /* Создаю адаптив */
 
 @media (max-width: 1160px){
@@ -715,6 +718,37 @@ foreignObject {
     }
     .header{
         background-position: center right;
+    }
+    .how-to{
+        padding-bottom: 0;
+    }
+    .how-to__box svg{
+        display: none;
+    }
+    .how-to__box-list{
+        display: block;
+        list-style: none;
+    }
+    .how-to__box-item{
+        padding-bottom: 40px;
+        text-align: left;
+        padding-left: 20px;
+        margin-left: 20px;
+        position: relative;
+        border-left: 1px solid #fff;
+    }
+    .how-to__box-item::before{
+        content: '';
+        position: absolute;
+        left: -10px;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+    .how-to__box-item:last-child{
+        border-left: none;
     }
 }
 
