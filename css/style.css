@@ -772,22 +772,33 @@ foreignObject {
     .services__inner{
         display: block;
     }
-    .services__list-item{
+    .services__box-list{
         width: 100%;
         margin-bottom: 170px;
         margin-right: 0;
     }
     .services__buttons{
-        min-width: 500px;
+        max-width: 500px;
+        width: 100%;
         margin: 0 auto;
     }
     .slick-slide img{
-        min-width: 100%;
+        max-width: 100%;
     }
 }
 
 @media (max-width: 720px){
     .services{
+        padding-bottom: 50px;
+    }
+    .slider__inner{
+        padding: 0;
+    }
+    .slider__description{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .info{
         padding-bottom: 50px;
     }
 }
@@ -867,8 +878,28 @@ foreignObject {
         font-size: 28px;
         line-height: 28px;
     }
+    .special-offer__new-price{
+        font-size: 34px;
+        line-height: 44px;
+    }
+    .services__box-list{
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .special-offer__item-box{
+        padding: 20px 10px;
+    }
+    .services__title,
+    .to-book__title{
+        font-size: 23px;
+    }
 }
 
+@media (max-width: 388px){
+        .services__btn--first::before{
+            bottom: 63px;
+        }
+}
 
 @media (max-width: 360px){
     .header__top{
