@@ -760,6 +760,30 @@ foreignObject {
     .about__item{
         padding-bottom: 50px;
     }
+    .about__table-tr:first-child{
+        display: none;
+    }
+    .about__table-td{
+        display: block;
+        text-align: right;
+        border-bottom: 1px solid #fff;
+    }
+    .about__table-td:last-child{
+        border: none;
+    }
+    .about__table-td span{
+        display: inline-block;
+    }
+    .about__table-td::before{
+        content: attr(aria-label);
+        float: left;
+    }
+    .about__table-tr + .about__table-tr{
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: 400;
+    }
+
 }
 
 @media (max-width: 360px){
